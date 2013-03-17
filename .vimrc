@@ -26,3 +26,11 @@ vnoremap ,l may`a:exe "!dict -P - $(echo " . @" . "\| recode latin1..utf-8)"<CR>
 " Smart and auto indent
 set ai
 set si
+
+" Return to last edit position when opening files
+autocmd BufReadPost *
+     \  if line("'\"") > 0 && line("'\"") <= line("$") |
+     \  exe "normal! g`\"" |
+     \  endif
+" Remember info about open buffers on close
+set viminfo^=%
