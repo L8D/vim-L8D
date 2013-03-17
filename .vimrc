@@ -34,3 +34,7 @@ autocmd BufReadPost *
      \  endif
 " Remember info about open buffers on close
 set viminfo^=%
+
+" Seperate undo file
+set undodir=~/.vim_runtime/temp_dirs/undodir
+set undofile
