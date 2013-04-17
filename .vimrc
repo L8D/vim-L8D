@@ -38,3 +38,5 @@ set viminfo^=%
 " Seperate undo file
 set undodir=~/.vim_runtime/temp_dirs/undodir
 set undofile
+
+let g:vim_markdown_folding_disabled=1
