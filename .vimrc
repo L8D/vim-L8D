@@ -4,6 +4,7 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 set scrolloff=4
+set ls=2
 
 " Set 256 color support
 set t_Co=256
@@ -14,7 +15,13 @@ call pathogen#helptags()
 filetype plugin indent on
 
 " Set colorscheme
-colorscheme inkpot
+" colorscheme inkpot
+set background=dark
+colorscheme solarized
+
+let g:startify_show_files = 0
+
+set directory=/tmp/vim-swp/
 
 set ignorecase
 set smartcase
@@ -40,3 +47,5 @@ set undodir=~/.vim_runtime/temp_dirs/undodir
 set undofile
 
 let g:vim_markdown_folding_disabled=1
+
+set pastetoggle=<F2>
