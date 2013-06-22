@@ -5,6 +5,8 @@ set tabstop=2
 set shiftwidth=2
 set scrolloff=4
 set ls=2
+set list
+set listchars=tab:\|_,trail:·,eol:¬
 
 " Set 256 color support
 set t_Co=256
@@ -49,3 +51,8 @@ set undofile
 let g:vim_markdown_folding_disabled=1
 
 set pastetoggle=<F2>
+map <F3> :NERDTreeToggle<CR>
+
+highlight SignColumn ctermbg=bg
+set foldmethod=syntax
+set foldlevelstart=99
